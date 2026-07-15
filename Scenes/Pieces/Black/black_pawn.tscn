@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dvpbfhro1pkkm"]
+
+[ext_resource type="Texture2D" uid="uid://c7ufqohpsm0mx" path="res://Assets/ChessAssets/chess/black_pawn.png" id="1_bay15"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+
+[node name="BlackPawn" type="Area2D" unique_id=1983876039]
+scale = Vector2(3, 3)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=316381467]
+texture = ExtResource("1_bay15")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=691149490]
+shape = SubResource("RectangleShape2D_g4v7s")

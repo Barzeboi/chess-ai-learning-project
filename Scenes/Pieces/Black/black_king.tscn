@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b4xx8v2hbgcno"]
+
+[ext_resource type="Texture2D" uid="uid://dekdoior8kbdn" path="res://Assets/ChessAssets/chess/black_king.png" id="1_htu6d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+
+[node name="BlackKing" type="Area2D" unique_id=73830365]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1637201164]
+texture = ExtResource("1_htu6d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=857215692]
+shape = SubResource("RectangleShape2D_g4v7s")

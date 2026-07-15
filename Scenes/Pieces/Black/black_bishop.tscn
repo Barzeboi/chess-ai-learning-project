@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dse6l8k0gnsw"]
+
+[ext_resource type="Texture2D" uid="uid://vj8xre50xup" path="res://Assets/ChessAssets/chess/black_bishop.png" id="1_qf1kr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+
+[node name="BlackBishop" type="Area2D" unique_id=1165683125]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1172886525]
+texture = ExtResource("1_qf1kr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1120239104]
+shape = SubResource("RectangleShape2D_g4v7s")

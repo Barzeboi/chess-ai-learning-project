@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bhcxxmo2tda5p"]
+
+[ext_resource type="Texture2D" uid="uid://ckcgffkhyecyi" path="res://Assets/ChessAssets/chess/black_rook.png" id="1_txf7v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+
+[node name="BlackRook" type="Area2D" unique_id=1306279915]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1241465281]
+texture = ExtResource("1_txf7v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=432516585]
+shape = SubResource("RectangleShape2D_g4v7s")

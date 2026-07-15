@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cg7upfjf8xjck"]
+
+[ext_resource type="Texture2D" uid="uid://c0w7tvtmyy6ia" path="res://Assets/ChessAssets/chess/black_queen.png" id="1_tjhtf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+
+[node name="BlackQueen" type="Area2D" unique_id=980761583]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=523441836]
+texture = ExtResource("1_tjhtf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1927485128]
+shape = SubResource("RectangleShape2D_g4v7s")

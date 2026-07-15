@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://cdo270wb13sst"]
+
+[ext_resource type="Texture2D" uid="uid://c3gioo8u8pyif" path="res://Assets/ChessAssets/chess/ChessTiles_0001.png" id="1_b6fju"]
+[ext_resource type="Texture2D" uid="uid://clic1oupf03kt" path="res://Assets/ChessAssets/chess/ChessTiles_0002.png" id="2_6h5vk"]
+
+[node name="GameScene" type="Node2D" unique_id=1102389626]
+
+[node name="Control" type="Control" parent="." unique_id=322046801]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=1960036700]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 16.0
+anchor_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer" unique_id=1788251464]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Control/MarginContainer/HBoxContainer" unique_id=1710758579]
+layout_mode = 2
+columns = 8
+
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/HBoxContainer/GridContainer" unique_id=2042450200]
+layout_mode = 2
+texture = ExtResource("1_b6fju")
+
+[node name="TextureRect2" type="TextureRect" parent="Control/MarginContainer/HBoxContainer/GridContainer" unique_id=187329974]
+layout_mode = 2
+texture = ExtResource("2_6h5vk")
+
+[node name="TextureRect3" type="TextureRect" parent="Control/MarginContainer/HBoxContainer/GridContainer" unique_id=388864645]
+layout_mode = 2
+texture = ExtResource("1_b6fju")
+
+[node name="TextureRect4" type="TextureRect" parent="Control/MarginContainer/HBoxContainer/GridContainer" unique_id=974430502]
+layout_mode = 2
+texture = ExtResource("2_6h5vk")
+
+[node name="TextureRect5" type="TextureRect" parent="Control/MarginContainer/HBoxContainer/GridContainer" unique_id=1064718509]
+layout_mode = 2
+texture = ExtResource("1_b6fju")
+
+[node name="TextureRect6" type="TextureRect" parent="Control/MarginContainer/HBoxContainer/GridContainer" unique_id=1989740273]
+layout_mode = 2
+texture = ExtResource("2_6h5vk")
+
+[node name="TextureRect7" type="TextureRect" parent="Control/MarginContainer/HBoxContainer/GridContainer" unique_id=641665579]
+layout_mode = 2
+texture = ExtResource("1_b6fju")
+
+[node name="TextureRect8" type="TextureRect" parent="Control/MarginContainer/HBoxContainer/GridContainer" unique_id=930320057]
+layout_mode = 2
+texture = ExtResource("2_6h5vk")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer/HBoxContainer" unique_id=603227167]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="Control/MarginContainer/HBoxContainer/VBoxContainer" unique_id=75571839]
+layout_mode = 2
+text = "New Game"
+
+[node name="Button2" type="Button" parent="Control/MarginContainer/HBoxContainer/VBoxContainer" unique_id=546934354]
+layout_mode = 2
+text = "Next Turn"

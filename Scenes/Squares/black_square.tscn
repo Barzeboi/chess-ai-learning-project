@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dl0q4ig4fxh8o"]
+
+[ext_resource type="Texture2D" uid="uid://c3gioo8u8pyif" path="res://Assets/ChessAssets/chess/ChessTiles_0001.png" id="1_rgfmc"]
+
+[node name="BlackSquare" type="Button" unique_id=738839797]
+offset_right = 8.0
+offset_bottom = 8.0
+scale = Vector2(1.25, 1.25)
+icon = ExtResource("1_rgfmc")
+flat = true

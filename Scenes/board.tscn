@@ -1,0 +1,175 @@
+[gd_scene format=4 uid="uid://dwrh4sxafuepw"]
+
+[ext_resource type="Texture2D" uid="uid://c3gioo8u8pyif" path="res://Assets/ChessAssets/chess/ChessTiles_0001.png" id="1_2wvcj"]
+[ext_resource type="Texture2D" uid="uid://clic1oupf03kt" path="res://Assets/ChessAssets/chess/ChessTiles_0002.png" id="2_uh3b8"]
+[ext_resource type="PackedScene" uid="uid://bisea8y7sk302" path="res://Scenes/CheckersPieces/black_piece.tscn" id="3_shhme"]
+[ext_resource type="PackedScene" uid="uid://b7ovkraqde3j0" path="res://Scenes/CheckersPieces/red_piece.tscn" id="4_s4i1f"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_shhme"]
+texture = ExtResource("1_2wvcj")
+texture_region_size = Vector2i(80, 80)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s4i1f"]
+texture = ExtResource("2_uh3b8")
+texture_region_size = Vector2i(80, 80)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_g4v7s"]
+tile_size = Vector2i(80, 80)
+sources/0 = SubResource("TileSetAtlasSource_shhme")
+sources/1 = SubResource("TileSetAtlasSource_s4i1f")
+
+[node name="Board" type="Node2D" unique_id=2092879688]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1945840971]
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAEAAAAAAAAAAAACAAAAAAAAAAAAAAADAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAFAAEAAAAAAAAAAAAGAAAAAAAAAAAAAAAHAAEAAAAAAAAAAAAAAAIAAAAAAAAAAAABAAMAAAAAAAAAAAACAAIAAAAAAAAAAAADAAMAAAAAAAAAAAAEAAIAAAAAAAAAAAAFAAMAAAAAAAAAAAAGAAIAAAAAAAAAAAAHAAMAAAAAAAAAAAAAAAQAAAAAAAAAAAABAAUAAAAAAAAAAAACAAQAAAAAAAAAAAADAAUAAAAAAAAAAAAEAAQAAAAAAAAAAAAFAAUAAAAAAAAAAAAGAAQAAAAAAAAAAAAHAAUAAAAAAAAAAAAAAAYAAAAAAAAAAAABAAcAAAAAAAAAAAACAAYAAAAAAAAAAAADAAcAAAAAAAAAAAAEAAYAAAAAAAAAAAAFAAcAAAAAAAAAAAAGAAYAAAAAAAAAAAAHAAcAAAAAAAAAAAAAAAEAAQAAAAAAAAABAAAAAQAAAAAAAAACAAEAAQAAAAAAAAADAAAAAQAAAAAAAAAEAAEAAQAAAAAAAAAFAAAAAQAAAAAAAAAGAAEAAQAAAAAAAAAHAAAAAQAAAAAAAAABAAIAAQAAAAAAAAAAAAMAAQAAAAAAAAACAAMAAQAAAAAAAAADAAIAAQAAAAAAAAAEAAMAAQAAAAAAAAAFAAIAAQAAAAAAAAAGAAMAAQAAAAAAAAAHAAIAAQAAAAAAAAAAAAUAAQAAAAAAAAABAAQAAQAAAAAAAAACAAUAAQAAAAAAAAADAAQAAQAAAAAAAAAEAAUAAQAAAAAAAAAFAAQAAQAAAAAAAAAGAAUAAQAAAAAAAAAHAAQAAQAAAAAAAAAAAAcAAQAAAAAAAAABAAYAAQAAAAAAAAACAAcAAQAAAAAAAAADAAYAAQAAAAAAAAAEAAcAAQAAAAAAAAAFAAYAAQAAAAAAAAAGAAcAAQAAAAAAAAAHAAYAAQAAAAAAAAA=")
+tile_set = SubResource("TileSet_g4v7s")
+
+[node name="BlackPieces" type="Node2D" parent="." unique_id=2146543437]
+
+[node name="BlackPiece" parent="BlackPieces" unique_id=1165415067 instance=ExtResource("3_shhme")]
+offset_left = 12.0
+offset_top = 571.0
+offset_right = 68.0
+offset_bottom = 627.0
+
+[node name="BlackPiece2" parent="BlackPieces" unique_id=578453764 instance=ExtResource("3_shhme")]
+offset_left = 173.0
+offset_top = 571.0
+offset_right = 229.0
+offset_bottom = 627.0
+
+[node name="BlackPiece3" parent="BlackPieces" unique_id=1249767322 instance=ExtResource("3_shhme")]
+offset_left = 332.0
+offset_top = 571.0
+offset_right = 388.0
+offset_bottom = 627.0
+
+[node name="BlackPiece4" parent="BlackPieces" unique_id=470994142 instance=ExtResource("3_shhme")]
+offset_left = 492.0
+offset_top = 571.0
+offset_right = 548.0
+offset_bottom = 627.0
+
+[node name="BlackPiece5" parent="BlackPieces" unique_id=1654868973 instance=ExtResource("3_shhme")]
+offset_left = 91.0
+offset_top = 492.0
+offset_right = 147.0
+offset_bottom = 548.0
+
+[node name="BlackPiece6" parent="BlackPieces" unique_id=807455962 instance=ExtResource("3_shhme")]
+offset_left = 253.0
+offset_top = 492.0
+offset_right = 309.0
+offset_bottom = 548.0
+
+[node name="BlackPiece7" parent="BlackPieces" unique_id=887616451 instance=ExtResource("3_shhme")]
+offset_left = 411.0
+offset_top = 493.0
+offset_right = 467.0
+offset_bottom = 549.0
+
+[node name="BlackPiece8" parent="BlackPieces" unique_id=995693783 instance=ExtResource("3_shhme")]
+offset_left = 573.0
+offset_top = 492.0
+offset_right = 629.0
+offset_bottom = 548.0
+
+[node name="BlackPiece9" parent="BlackPieces" unique_id=1043939886 instance=ExtResource("3_shhme")]
+offset_left = 12.0
+offset_top = 410.0
+offset_right = 68.0
+offset_bottom = 466.0
+
+[node name="BlackPiece10" parent="BlackPieces" unique_id=134451519 instance=ExtResource("3_shhme")]
+offset_left = 173.0
+offset_top = 410.0
+offset_right = 229.0
+offset_bottom = 466.0
+
+[node name="BlackPiece11" parent="BlackPieces" unique_id=2024411951 instance=ExtResource("3_shhme")]
+offset_left = 332.0
+offset_top = 410.0
+offset_right = 388.0
+offset_bottom = 466.0
+
+[node name="BlackPiece12" parent="BlackPieces" unique_id=1388564606 instance=ExtResource("3_shhme")]
+offset_left = 492.0
+offset_top = 410.0
+offset_right = 548.0
+offset_bottom = 466.0
+
+[node name="RedPieces" type="Node2D" parent="." unique_id=614073023]
+
+[node name="RedPiece" parent="RedPieces" unique_id=1472103210 instance=ExtResource("4_s4i1f")]
+offset_left = 91.0
+offset_top = 11.0
+offset_right = 147.0
+offset_bottom = 67.0
+
+[node name="RedPiece2" parent="RedPieces" unique_id=382029137 instance=ExtResource("4_s4i1f")]
+offset_left = 253.0
+offset_top = 11.0
+offset_right = 309.0
+offset_bottom = 67.0
+
+[node name="RedPiece3" parent="RedPieces" unique_id=652158206 instance=ExtResource("4_s4i1f")]
+offset_left = 411.0
+offset_top = 11.0
+offset_right = 467.0
+offset_bottom = 67.0
+
+[node name="RedPiece4" parent="RedPieces" unique_id=1250369900 instance=ExtResource("4_s4i1f")]
+offset_left = 573.0
+offset_top = 11.0
+offset_right = 629.0
+offset_bottom = 67.0
+
+[node name="RedPiece5" parent="RedPieces" unique_id=1857409343 instance=ExtResource("4_s4i1f")]
+offset_left = 12.0
+offset_top = 91.0
+offset_right = 68.0
+offset_bottom = 147.0
+
+[node name="RedPiece6" parent="RedPieces" unique_id=976692668 instance=ExtResource("4_s4i1f")]
+offset_left = 173.0
+offset_top = 91.0
+offset_right = 229.0
+offset_bottom = 147.0
+
+[node name="RedPiece7" parent="RedPieces" unique_id=568339761 instance=ExtResource("4_s4i1f")]
+offset_left = 332.0
+offset_top = 91.0
+offset_right = 388.0
+offset_bottom = 147.0
+
+[node name="RedPiece8" parent="RedPieces" unique_id=70572565 instance=ExtResource("4_s4i1f")]
+offset_left = 492.0
+offset_top = 91.0
+offset_right = 548.0
+offset_bottom = 147.0
+
+[node name="RedPiece9" parent="RedPieces" unique_id=314954616 instance=ExtResource("4_s4i1f")]
+offset_left = 91.0
+offset_top = 170.0
+offset_right = 147.0
+offset_bottom = 226.0
+
+[node name="RedPiece10" parent="RedPieces" unique_id=1231699371 instance=ExtResource("4_s4i1f")]
+offset_left = 253.0
+offset_top = 170.0
+offset_right = 309.0
+offset_bottom = 226.0
+
+[node name="RedPiece11" parent="RedPieces" unique_id=2127342692 instance=ExtResource("4_s4i1f")]
+offset_left = 411.0
+offset_top = 170.0
+offset_right = 467.0
+offset_bottom = 226.0
+
+[node name="RedPiece12" parent="RedPieces" unique_id=1021842951 instance=ExtResource("4_s4i1f")]
+offset_left = 573.0
+offset_top = 170.0
+offset_right = 629.0
+offset_bottom = 226.0

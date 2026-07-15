@@ -1,0 +1,1 @@
+1. The Positions of the Pieces are manually chosen in code, then they are divided into arrays for specific pieces to use, and every time a piece uses a position it is deleted from the array.

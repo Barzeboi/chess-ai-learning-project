@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://7q32mm1tk8m3"]
+
+[ext_resource type="Texture2D" uid="uid://clic1oupf03kt" path="res://Assets/ChessAssets/chess/ChessTiles_0002.png" id="1_cw2ay"]
+
+[node name="WhiteSquare" type="Button" unique_id=1612270365]
+offset_right = 87.99999
+offset_bottom = 88.0
+scale = Vector2(1.25, 1.25)
+icon = ExtResource("1_cw2ay")
+flat = true
+icon_alignment = 1

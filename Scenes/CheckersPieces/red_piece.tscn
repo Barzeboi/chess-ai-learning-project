@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://b7ovkraqde3j0"]
+
+[ext_resource type="Texture2D" uid="uid://dli8qnt1qi2rv" path="res://Assets/CheckersPieces/RedPiece.png" id="1_o7jdx"]
+[ext_resource type="Script" uid="uid://dcxhdgf1sbgqo" path="res://Scripts/Pieces/Pieces.gd" id="2_2sgv5"]
+
+[node name="RedPiece" type="Button" unique_id=1472103210]
+offset_right = 56.0
+offset_bottom = 56.0
+icon = ExtResource("1_o7jdx")
+flat = true
+icon_alignment = 1
+script = ExtResource("2_2sgv5")
