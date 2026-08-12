@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dnc1mm2gy07xr" path="res://Assets/CheckersPieces/BlackPiece.png" id="1_cf3bm"]
 [ext_resource type="Script" uid="uid://dcxhdgf1sbgqo" path="res://Scripts/Pieces/Pieces.gd" id="2_f7a41"]
 
-[node name="BlackPiece" type="Button" unique_id=1165415067]
+[node name="BlackPiece" type="Button" unique_id=1165415067 groups=["Black"]]
 offset_right = 8.0
 offset_bottom = 8.0
 icon = ExtResource("1_cf3bm")

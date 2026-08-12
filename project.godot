@@ -14,6 +14,10 @@ config/name="Checkers AI Learning Project"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+EventCall="*uid://2dmxje6ij22u"
+
 [display]
 
 window/size/viewport_width=640

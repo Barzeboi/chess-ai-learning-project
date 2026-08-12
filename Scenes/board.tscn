@@ -1,9 +1,11 @@
 [gd_scene format=4 uid="uid://dwrh4sxafuepw"]
 
 [ext_resource type="Texture2D" uid="uid://c3gioo8u8pyif" path="res://Assets/ChessAssets/chess/ChessTiles_0001.png" id="1_2wvcj"]
+[ext_resource type="Script" uid="uid://4ffnydjrsdw" path="res://Scripts/Board/Board.gd" id="1_bh37u"]
 [ext_resource type="Texture2D" uid="uid://clic1oupf03kt" path="res://Assets/ChessAssets/chess/ChessTiles_0002.png" id="2_uh3b8"]
 [ext_resource type="PackedScene" uid="uid://bisea8y7sk302" path="res://Scenes/CheckersPieces/black_piece.tscn" id="3_shhme"]
 [ext_resource type="PackedScene" uid="uid://b7ovkraqde3j0" path="res://Scenes/CheckersPieces/red_piece.tscn" id="4_s4i1f"]
+[ext_resource type="Script" uid="uid://bk0erwc2fww3k" path="res://Scripts/Action/PlayerAction.gd" id="5_s4i1f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_shhme"]
 texture = ExtResource("1_2wvcj")
@@ -21,6 +23,7 @@ sources/0 = SubResource("TileSetAtlasSource_shhme")
 sources/1 = SubResource("TileSetAtlasSource_s4i1f")
 
 [node name="Board" type="Node2D" unique_id=2092879688]
+script = ExtResource("1_bh37u")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1945840971]
 tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAEAAAAAAAAAAAACAAAAAAAAAAAAAAADAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAFAAEAAAAAAAAAAAAGAAAAAAAAAAAAAAAHAAEAAAAAAAAAAAAAAAIAAAAAAAAAAAABAAMAAAAAAAAAAAACAAIAAAAAAAAAAAADAAMAAAAAAAAAAAAEAAIAAAAAAAAAAAAFAAMAAAAAAAAAAAAGAAIAAAAAAAAAAAAHAAMAAAAAAAAAAAAAAAQAAAAAAAAAAAABAAUAAAAAAAAAAAACAAQAAAAAAAAAAAADAAUAAAAAAAAAAAAEAAQAAAAAAAAAAAAFAAUAAAAAAAAAAAAGAAQAAAAAAAAAAAAHAAUAAAAAAAAAAAAAAAYAAAAAAAAAAAABAAcAAAAAAAAAAAACAAYAAAAAAAAAAAADAAcAAAAAAAAAAAAEAAYAAAAAAAAAAAAFAAcAAAAAAAAAAAAGAAYAAAAAAAAAAAAHAAcAAAAAAAAAAAAAAAEAAQAAAAAAAAABAAAAAQAAAAAAAAACAAEAAQAAAAAAAAADAAAAAQAAAAAAAAAEAAEAAQAAAAAAAAAFAAAAAQAAAAAAAAAGAAEAAQAAAAAAAAAHAAAAAQAAAAAAAAABAAIAAQAAAAAAAAAAAAMAAQAAAAAAAAACAAMAAQAAAAAAAAADAAIAAQAAAAAAAAAEAAMAAQAAAAAAAAAFAAIAAQAAAAAAAAAGAAMAAQAAAAAAAAAHAAIAAQAAAAAAAAAAAAUAAQAAAAAAAAABAAQAAQAAAAAAAAACAAUAAQAAAAAAAAADAAQAAQAAAAAAAAAEAAUAAQAAAAAAAAAFAAQAAQAAAAAAAAAGAAUAAQAAAAAAAAAHAAQAAQAAAAAAAAAAAAcAAQAAAAAAAAABAAYAAQAAAAAAAAACAAcAAQAAAAAAAAADAAYAAQAAAAAAAAAEAAcAAQAAAAAAAAAFAAYAAQAAAAAAAAAGAAcAAQAAAAAAAAAHAAYAAQAAAAAAAAA=")
@@ -173,3 +176,6 @@ offset_left = 573.0
 offset_top = 170.0
 offset_right = 629.0
 offset_bottom = 226.0
+
+[node name="PlayerAction" type="Node" parent="." unique_id=2030843607]
+script = ExtResource("5_s4i1f")
