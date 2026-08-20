@@ -1,13 +1,13 @@
-extends Node
-class_name Board
+extends Node;
+class_name Board;
 
-@onready var tile_map_layer: TileMapLayer = $TileMapLayer
+@onready var tile_map_layer: TileMapLayer = $TileMapLayer;
 
-static var Pieces: Array = []
+static var Pieces: Array = [];
 
 func _ready() -> void:
-	EventCall.pick_piece.connect(_player_pick_piece)
-	EventCall.send_move_to_board.connect(_move_piece)
+	EventCall.pick_piece.connect(_player_pick_piece);
+	EventCall.send_move_to_board.connect(_move_piece);
 
 func _player_pick_piece(color:String, position: Vector2) -> void:
 	
@@ -33,3 +33,4 @@ func _move_piece(piece, move_position, valid_moves):
 	else:
 		print("Invalid Move: " + str(valid_moves[1]))
 		move_position = piece_pos
+	

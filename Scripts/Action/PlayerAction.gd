@@ -42,7 +42,6 @@ func _move_entered(move_position: Vector2i) -> Vector2i:
 	if is_piece_active == true:
 		if action_points > 0:
 			piece_pos = move_position
-			var new_position: Vector2 = tile_map_layer.map_to_local(tile_map_layer.to_global(move_position))
 			action_points -= 1
 			print(name + " new position (" + str(move_position) + ")")
 			EventCall.send_move_to_board.emit(active_piece, move_position, valid_moves)

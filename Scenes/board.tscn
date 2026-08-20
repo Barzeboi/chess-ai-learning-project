@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bisea8y7sk302" path="res://Scenes/CheckersPieces/black_piece.tscn" id="3_shhme"]
 [ext_resource type="PackedScene" uid="uid://b7ovkraqde3j0" path="res://Scenes/CheckersPieces/red_piece.tscn" id="4_s4i1f"]
 [ext_resource type="Script" uid="uid://bk0erwc2fww3k" path="res://Scripts/Action/PlayerAction.gd" id="5_s4i1f"]
+[ext_resource type="Script" uid="uid://cu5fr4trtkfx2" path="res://Scripts/Action/AIAction.gd" id="7_twe5h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_shhme"]
 texture = ExtResource("1_2wvcj")
@@ -179,3 +180,6 @@ offset_bottom = 226.0
 
 [node name="PlayerAction" type="Node" parent="." unique_id=2030843607]
 script = ExtResource("5_s4i1f")
+
+[node name="AIAction" type="Node" parent="." unique_id=1820895477]
+script = ExtResource("7_twe5h")
